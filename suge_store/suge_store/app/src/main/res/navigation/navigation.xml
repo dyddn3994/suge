@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/fragment_login">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.ssafy.suge_store.src.main.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_sign_up"
+            app:destination="@id/fragment_sign_up" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@+id/fragment_home"
+            app:popUpTo="@+id/fragment_login"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sign_up"
+        android:name="com.ssafy.suge_store.src.main.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.ssafy.suge_store.src.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_store_create"
+            app:destination="@+id/fragment_store_create"/>
+        <action
+            android:id="@+id/action_home_to_store_reward"
+            app:destination="@+id/fragment_store_reward"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_store_create"
+        android:name="com.ssafy.suge_store.src.store.StoreCreateFragment"
+        tools:layout="@layout/fragment_store_create">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_store_reward"
+        android:name="com.ssafy.suge_store.src.store.StoreRewardFragment"
+        tools:layout="@layout/fragment_store_reward">
+    </fragment>
+
+    <!-- point -->
+    <fragment
+        android:id="@+id/fragment_point"
+        android:name="com.ssafy.suge_store.src.point.PointFragment"
+        tools:layout="@layout/fragment_point">
+        <action
+            android:id="@+id/action_point_to_point_use"
+            app:destination="@id/fragment_point_use"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_point_use"
+        android:name="com.ssafy.suge_store.src.point.PointUseFragment"
+        tools:layout="@layout/fragment_point_use">
+        <action
+            android:id="@+id/action_point_use_to_point_count"
+            app:destination="@+id/fragment_point_count"/>
+        <action
+            android:id="@+id/action_point_use_to_home"
+            app:destination="@+id/fragment_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_point_count"
+        android:name="com.ssafy.suge_store.src.point.PointCountFragment"
+        tools:layout="@layout/fragment_point_count">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_mypage"
+        android:name="com.ssafy.suge_store.src.mypage.MypageFragment"
+        tools:layout="@layout/fragment_mypage">
+        <action
+            android:id="@+id/action_mypage_to_user_edit"
+            app:destination="@+id/fragment_user_edit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_user_edit"
+        android:name="com.ssafy.suge_store.src.mypage.UserEditFragment"
+        tools:layout="@layout/fragment_user_edit">
+    </fragment>
+
+</navigation>

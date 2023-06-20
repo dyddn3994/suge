@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_point"
+        android:icon="@drawable/outline_qr_code_scanner_24"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="적립/사용"
+        />
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/outline_home_24"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/outline_person_outline_24"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="마이페이지" />
+</menu>

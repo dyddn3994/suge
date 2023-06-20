@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "383316978446",
+    "firebase_url": "https://suge-2ec7d-default-rtdb.firebaseio.com",
+    "project_id": "suge-2ec7d",
+    "storage_bucket": "suge-2ec7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383316978446:android:cb596e211ec143a1c2455f",
+        "android_client_info": {
+          "package_name": "com.ssafy.suge_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383316978446-subjbt0gm8nj0cpi3mqpgd08t5uh2tf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5AwZflYsu_PR8CKh1S9iK_ds8F13gyu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383316978446-subjbt0gm8nj0cpi3mqpgd08t5uh2tf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
